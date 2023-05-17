@@ -1,4 +1,134 @@
+/* Font link */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+/* For every element on the webpage */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* CSS variables */
+:root {
+    --bg-color: #1f1f38;
+    --bg-color-variant: #2c2c6c;
+    --primary-color: #4db5ff;
+    --primary-color-variant: rgba(77, 181, 255, 0.4);
+    --light-color: rgba(255, 255, 255, 0.6);
+
+    --container-width-large: 75%;
+    --container-width-medium: 86%;
+    --container-width-small: 90%;
+
+    --transition: all 400ms ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
-    background: black;
+    font-family: 'Open Sans', sans-serif;
+    background: var(--bg-color);
     color: white;
+    line-height: 1.7;
+    /* Add later */
+    background-image: url();
+}
+
+.container {
+    width: var(--container-width-large);
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+section {
+    margin-top: 8rem;
+}
+
+section > h2, section > h5 {
+    text-align: center;
+    color: var(--light-color);
+}
+
+section > h2 {
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.text-light{
+    color: var(--light-color);
+}
+
+a {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: white;
+}
+
+.btn{
+    width: max-content;
+    display: inline-block;
+    color: var(--primary-color);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: white;
+    color: var(--bg-color);
+    border-color: transparent;
+}
+
+.btn-primary{
+    background: var(--primary-color);
+    color: var(--bg-color);
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Media queries for screen sizes */
+@media screen and (max-width:600px) {
+    .container {
+        width: var(--container-width-small);
+    }
+
+    section {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .container {
+        width: var(--container-width-medium);
+    }
+
+    section {
+        margin-top: 6rem;
+    }
 }
