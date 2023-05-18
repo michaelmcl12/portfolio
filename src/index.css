@@ -113,16 +113,6 @@ img{
 }
 
 /* Media queries for screen sizes */
-@media screen and (max-width:600px) {
-    .container {
-        width: var(--container-width-small);
-    }
-
-    section {
-        margin-top: 2rem;
-    }
-}
-
 @media screen and (max-width:1024px) {
     .container {
         width: var(--container-width-medium);
@@ -130,5 +120,15 @@ img{
 
     section {
         margin-top: 6rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        width: var(--container-width-small);
+    }
+
+    section {
+        margin-top: 2rem;
     }
 }
