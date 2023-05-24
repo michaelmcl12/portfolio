@@ -1,0 +1,41 @@
+.exp_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.exp_container > div {
+    background: var(--bg-color-variant);
+    padding: 2.5rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.exp_container > div:hover {
+    background: transparent;
+    border-color: var(--primary-color-variant);
+    cursor: default;
+}
+
+.exp_container > div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.exp_container > div h4 {
+    color: var(--light-color);
+}
+
+.exp_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.exp_details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
