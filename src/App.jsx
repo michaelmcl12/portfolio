@@ -7,6 +7,7 @@ import About from './Components/About/About.jsx';
 import Experience from './Components/Experience/Experience.jsx';
 import Contact from './Components/Contact/Contact.jsx';
 import Education from './Components/Education/Education.jsx';
+import Portfolio from './Components/Portfolio/Portfolio.jsx';
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
          <Nav />
          <About />
          <Education />
+         <Portfolio />
          <Experience />
          <Contact />
         </>

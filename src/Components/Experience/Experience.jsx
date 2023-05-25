@@ -29,62 +29,83 @@ const Experience = () => {
         <h2>Experience</h2>
 
         <div className="container exp_container">
+
           <div className="exp_languages">
             <h3>Programming Languages</h3>
         
             <div className="exp_content">
               <article className='exp_details'>
-                <h4>Python</h4>
+                <h4>Python - Proficient</h4>
                 <LinearProgress color='proficient' variant="determinate" value={75} />
               </article>
               
               <article className='exp_details'>
                 {/* logo */}
-                <h4>C++</h4>
+                <h4>C++ - Proficient</h4>
                 <LinearProgress color='proficient' variant="determinate" value={75} />
               </article>
 
               <article className='exp_details'>
                 {/* logo */}
-                <h4>HTML</h4>
+                <h4>HTML - Proficient</h4>
                 <LinearProgress color='proficient' variant="determinate" value={75} />
               </article>
 
               <article className='exp_details'>
                 {/* logo */}
-                <h4>CSS</h4>
+                <h4>CSS - Proficient</h4>
                 <LinearProgress color='proficient' variant="determinate" value={75} />
               </article>
 
               <article className='exp_details'>
                 {/* logo */}
-                <h4>Javascript</h4>
+                <h4>Javascript - Intermediate</h4>
                 <LinearProgress color='intermediate' variant="determinate" value={50} />
               </article>      
             </div>
           </div>
 
           <div className="exp_frameworks">
-            <h3>Other Skills</h3>
+            <h3>Frameworks and Libraries</h3>
             <div className="exp_content">
+
               <article className='exp_details'>
                 {/* logo */}
                 <h4>React</h4>
-                <LinearProgress color='learning' variant="determinate" value={25} />
               </article>
 
               <article className='exp_details'>
                 {/* logo */}
-                <h4>Git</h4>
-                <LinearProgress color='intermediate' variant="determinate" value={50} />
+                <h4>Material UI</h4>
               </article>
 
               <article className='exp_details'>
                 {/* logo */}
                 <h4>Django</h4>
-                <LinearProgress color='learning' variant="determinate" value={25} />
               </article>
+
+            </div>
           </div>
+
+          <div className="exp_tools">
+            <h3>Developer Tools</h3>
+            <div className="exp_content">
+
+              <article className='exp_details'>
+                {/* logo */}
+                <h4>Git</h4>
+              </article>
+
+              <article className='exp_details'>
+                {/* logo */}
+                <h4>Visual studio Code</h4>
+              </article>
+
+              <article className='exp_details'>
+                {/* logo */}
+                <h4>Xcode</h4>
+              </article>
+            </div>
           </div>
 
         </div>
