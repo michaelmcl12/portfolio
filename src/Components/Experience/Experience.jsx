@@ -6,16 +6,16 @@ import { createTheme, ThemeProvider } from '@mui/material/styles'
 const theme = createTheme({
   palette: {
     learning: {
-      main: '#ffbe0b',
+      main: '#ff595e',
     },
     intermediate: {
-      main: '#fb5607',
+      main: '#ffca3a',
     },
     proficient: {
-      main: '#ff006e',
+      main: '#1982c4',
     },
     expert: {
-      main: '#8338ec',
+      main: '#6a4c93',
     },
   },
 });
@@ -61,7 +61,13 @@ const Experience = () => {
                 {/* logo */}
                 <h4>Javascript - Intermediate</h4>
                 <LinearProgress color='intermediate' variant="determinate" value={50} />
-              </article>      
+              </article>  
+
+              <article className='exp_details'>
+                {/* logo */}
+                <h4>Swift - Learning</h4>
+                <LinearProgress color='learning' variant="determinate" value={25} />
+              </article>       
             </div>
           </div>
 

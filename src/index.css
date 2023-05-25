@@ -14,10 +14,10 @@
 
 /* CSS variables */
 :root {
-    --bg-color: #1f1f38;
-    --bg-color-variant: #2c2c6c;
-    --primary-color: #4db5ff;
-    --primary-color-variant: rgba(77, 181, 255, 0.4);
+    --bg-color: #1d3557;
+    --bg-color-variant: #457b9d;
+    --primary-color: #a8dadc;
+    --primary-color-variant: #f1faee;
     --light-color: rgba(255, 255, 255, 0.6);
 
     --container-width-large: 75%;
