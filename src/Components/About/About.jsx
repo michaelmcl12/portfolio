@@ -2,6 +2,8 @@ import React from 'react'
 import './About.css'
 import Headshot from '../../Assets/headshot.jpg'
 import {TbAwardFilled} from 'react-icons/tb'
+import {FaHome} from 'react-icons/fa'
+import {FaRunning} from 'react-icons/fa'
 
 const about = () => {
     return (
@@ -21,24 +23,26 @@ const about = () => {
                         <article className='about_card'>
                             <TbAwardFilled className='about_icon' />
                             <h5>Experience</h5>
-                            <small>3 years </small>
+                            <small>2 years</small>
                         </article>
 
                         <article className='about_card'>
-                            <TbAwardFilled className='about_icon' />
-                            <h5>clients</h5>
-                            <small> a lot </small>
+                            <FaHome className='about_icon' />
+                            <h5>Where I am from</h5>
+                            <small> I am a from a small town in upstate New York </small>
                         </article>
 
                         <article className='about_card'>
-                            <TbAwardFilled className='about_icon' />
-                            <h5>projects </h5>
-                            <small>55</small>
+                            <FaRunning className='about_icon' />
+                            <h5>Hobbies</h5>
+                            <small>My hobbies include running, hiking, and playing video games</small>
                         </article>
                     </div>
 
                     <p>
-                        asdfodsjf
+                        I am a skilled developer with a passion for creating innovative and efficient solutions. 
+                        With the experience I gained throughout my studies I have learned various programming languages and frameworks that excel at turning my ideas into applications. 
+                        My goal is to deliver high-quality code and collaborate effectively with teams to meet project goals and exceed expectations.
                     </p>
 
                     <a href='#contact' className='btn btn-primary'>Contact Me!</a>

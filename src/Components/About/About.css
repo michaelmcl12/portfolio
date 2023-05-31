@@ -1,7 +1,7 @@
 .about_container {
     display: grid;
-    grid-template-columns: 30% 50%;
-    gap: 20%;
+    grid-template-columns: 25% 65%;
+    gap: 10%;
 }
 
 .about_me {
