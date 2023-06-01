@@ -1,0 +1,25 @@
+.edu_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.school_container {
+    background: var(--bg-color-variant);
+    padding: 2.5rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.edu_container > div:hover {
+    background: transparent;
+    border-color: var(--primary-color-variant);
+    cursor: default;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
