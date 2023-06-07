@@ -9,6 +9,7 @@ import Contact from './Components/Contact/Contact.jsx'
 import Education from './Components/Education/Education.jsx'
 import Portfolio from './Components/Portfolio/Portfolio.jsx'
 import Work from './Components/Work/Work.jsx'
+import Footer from './Components/Footer/Footer.jsx'
 
 const App = () => {
     return (
@@ -21,6 +22,7 @@ const App = () => {
          <Portfolio />
          <Experience />
          <Contact />
+         <Footer />
         </>
     )
 }

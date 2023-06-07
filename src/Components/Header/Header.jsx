@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css'
 import CTA from './CTA'
-import Headshot from '../../Assets/headshot.jpg'
+import Headshot from '../../Assets/headshot.jpeg'
 import HeaderLinks from './HeaderLinks'
 
 const Header = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import Headshot from '../../Assets/headshot.jpg'
+import Carousel from './Carousel.jsx'
 import {TbAwardFilled} from 'react-icons/tb'
 import {FaHome} from 'react-icons/fa'
 import {FaRunning} from 'react-icons/fa'
@@ -8,14 +8,13 @@ import {FaRunning} from 'react-icons/fa'
 const about = () => {
     return (
         <section id='about'>
+            
             <h5>Get to Know</h5>
             <h2>About Me</h2>
 
             <div className='container about_container'>
-                <div className="about_me">
-                    <div className="about_me_image">
-                        <img src={Headshot} alt='headshot' />
-                    </div>
+                <div className="about_me_carousel">
+                 <Carousel />
                 </div>
 
                 <div className="about_content">
