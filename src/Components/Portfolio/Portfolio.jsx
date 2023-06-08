@@ -11,13 +11,6 @@ const portfolio_data = [
         title: 'Personal Website',
         github: 'https://github.com/michaelmcl12/portfolio',
         description: 'This project was created as my personal site to showcase my work experience and education. It was also created to learn react and gain a better understanding of Javascript.'
-    },
-    {
-        id: 2,
-        image: IMG2,
-        title: 'Test site',
-        github: 'fsd',
-        description: 'This is a placeholder'
     }
 ]
 

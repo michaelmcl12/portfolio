@@ -113,6 +113,11 @@ img{
     object-fit: cover;
 }
 
+.header_nav {
+    height: 10vh;
+    padding-top: 0;
+}
+
 /* Media queries for screen sizes */
 @media screen and (max-width:1024px) {
     .container {

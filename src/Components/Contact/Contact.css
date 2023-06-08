@@ -1,13 +1,15 @@
 .container.contact_container {
     width: 60%;
     display: grid;
-    grid-template-columns: 30% 60%;
+    grid-template-rows: 45% 45%;
     gap: 10%;
 }
 
 .contact_card_container{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-direction: row;
+    justify-content: space-between;
     gap: 1rem;
 }
 

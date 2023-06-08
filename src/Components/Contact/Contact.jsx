@@ -3,6 +3,7 @@ import './Contact.css'
 import {SiMinutemailer} from 'react-icons/si'
 import {AiFillPhone} from 'react-icons/ai'
 import {RiWhatsappFill} from 'react-icons/ri'
+import {BsLinkedin} from 'react-icons/bs'
 import emailjs from 'emailjs-com'
 
 const Contact = () => {
@@ -22,12 +23,26 @@ const Contact = () => {
             <h2>Contact Information</h2>
 
             <div className="container contact_container">
+                <form ref={form} onSubmit={sendEmail}>
+                    <input type='text' name='name' placeholder='Your Name' required />
+                    <input type='email' name='email' placeholder='Your Email' required />
+                    <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
+                    <button className='btn btn-primary' type='submit'>Send Message</button>
+                </form>
+
                 <div className='contact_card_container'>
                     <article className='contact_card'>
                         <SiMinutemailer className='contact_icon' />
                         <h4>Email</h4>
                         <h5>michael.mcl812@gmail.com</h5>
                         <a href='mailto:michael.mcl812@gmail.com'>Send an email</a>
+                    </article>
+
+                    <article className='contact_card'>
+                        <SiMinutemailer className='contact_icon' />
+                        <h4>LinkedIn</h4>
+                        <h5>Connect with me!</h5>
+                        <a href='https://www.linkedin.com/in/michael-mclaughlin-422b15211/' target='_blank'><BsLinkedin /></a>
                     </article>
 
                     <article className='contact_card'>
@@ -44,13 +59,6 @@ const Contact = () => {
                         <a href="tel:607-316-3797">Call Me</a>
                     </article>
                 </div>
-
-                <form ref={form} onSubmit={sendEmail}>
-                    <input type='text' name='name' placeholder='Your Name' required />
-                    <input type='email' name='email' placeholder='Your Email' required />
-                    <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
-                    <button className='btn btn-primary' type='submit'>Send Message</button>
-                </form>
             </div>
         </section>
     )

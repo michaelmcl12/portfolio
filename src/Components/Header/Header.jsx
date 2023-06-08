@@ -1,28 +1,56 @@
 import React from 'react'
 import './Header.css'
-import CTA from './CTA'
-import Headshot from '../../Assets/headshot.jpeg'
-import HeaderLinks from './HeaderLinks'
+import Carousel from './Carousel.jsx'
+import {TbAwardFilled} from 'react-icons/tb'
+import {FaHome} from 'react-icons/fa'
+import {FaRunning} from 'react-icons/fa'
+import CTA from './CTA.jsx'
 
-const Header = () => {
-  return (
-    <header>
-      <div className="container header_container">
-        <h5>Hello I am</h5>
-        <h1>Michael McLaughlin</h1>
-        <h5 className="text-light">Student</h5>
+const about = () => {
+    return (
+        <header>
+            <section>
+                <h2>About Me</h2>
 
-        <CTA />
-        <HeaderLinks />
+                <div className='container about_container'>
+                    <div className="about_me_carousel">
+                    <Carousel />
+                    </div>
 
-        <div className='headshot'>
-          <img src={Headshot} alt="headshot" />
-        </div>
+                    <div className="about_content">
+                        <div className="about_cards">
+                            <article className='about_card'>
+                                <TbAwardFilled className='about_icon' />
+                                <h5>Experience</h5>
+                                <small>2 years</small>
+                            </article>
 
-        <a href='#contact' className='scroll_down'>Scroll Down</a>
-      </div>
-    </header>
-  )
+                            <article className='about_card'>
+                                <FaHome className='about_icon' />
+                                <h5>Where I am from</h5>
+                                <small> I am a from a small town in upstate New York </small>
+                            </article>
+
+                            <article className='about_card'>
+                                <FaRunning className='about_icon' />
+                                <h5>Hobbies</h5>
+                                <small>My hobbies include running, hiking, and playing video games</small>
+                            </article>
+                        </div>
+
+                        <p>
+                            I am a skilled developer with a passion for creating innovative and efficient solutions. 
+                            With the experience I gained throughout my studies I have learned various programming languages and frameworks that excel at turning my ideas into applications. 
+                            My goal is to deliver high-quality code and collaborate effectively with teams to meet project goals and exceed expectations.
+                        </p>
+
+                        <CTA />
+                    </div>
+                </div>
+            
+            </section>    
+        </header>
+    )
 }
 
-export default Header
+export default about

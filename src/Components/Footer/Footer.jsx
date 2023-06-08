@@ -19,8 +19,8 @@ const Footer = () => {
                 <li><a href='#contact'>Contact</a></li>
             </ul>
             <div className='footer_links'>
-                <a href='https://www.instagram.com/'><AiFillInstagram/></a>
-                <a href='https://twitter.com/'><BsTwitter/></a>
+                <a href='https://www.instagram.com/michael.mcl/' target='_blank'><AiFillInstagram/></a>
+                <a href='https://twitter.com/' target='_blank'><BsTwitter/></a>
             </div>
 
             <div className="footer_copyright">

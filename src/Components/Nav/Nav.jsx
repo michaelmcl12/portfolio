@@ -1,24 +1,23 @@
-import React from 'react'
-import './Nav.css'
-import {AiFillHome} from 'react-icons/ai'
-import {FaUser} from 'react-icons/fa'
-import {FaBook} from 'react-icons/fa'
-import {MdSchool} from 'react-icons/md'
-import {TbMessageCircle2Filled} from 'react-icons/tb'
-import {useState} from 'react'
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
 
-
-const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#');
+export default function Nav() {
   return (
-    <nav>
-      <a href='#' onClick = {() => setActiveNav('#')} className= {activeNav === '#' ? 'active' : ''} ><AiFillHome /></a>
-      <a href='#about' onClick = {() => setActiveNav('#about')} className= {activeNav === '#about' ? 'active' : ''}><FaUser /></a>
-      <a href='#education' onClick = {() => setActiveNav('#education')} className= {activeNav === '#education' ? 'active' : ''}>< MdSchool/></a>
-      <a href='#experience' onClick = {() => setActiveNav('#experience')} className= {activeNav === '#experience' ? 'active' : ''}><FaBook /></a>
-      <a href='#contact' onClick = {() => setActiveNav('#contact')} className= {activeNav === '#contact' ? 'active' : ''}><TbMessageCircle2Filled /></a>
-    </nav>
-  )
+      <AppBar className='header_nav' sx={{ bgcolor: "#a8dadc" }} position="static">
+        <Toolbar>
+          <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}> Michael McLaughlin </Typography>
+          <Button href='#education'  color="inherit">Education</Button>
+          <Button href='#work' color="inherit">Previous jobs</Button>
+          <Button href='#portfolio' color="inherit">Portfolio</Button>
+          <Button href='#experience' color="inherit">Experience</Button>
+          <Button href='#contact' color="inherit">Contact</Button>
+        </Toolbar>
+      </AppBar>
+  );
 }
-
-export default Nav
