@@ -41,20 +41,20 @@ const Experience = () => {
               
               <article className='exp_details'>
                 {/* logo */}
-                <h4>C++ - Proficient</h4>
-                <LinearProgress color='proficient' variant="determinate" value={75} />
+                <h4>C++ - Intermediate</h4>
+                <LinearProgress color='intermediate' variant="determinate" value={75} />
               </article>
 
               <article className='exp_details'>
                 {/* logo */}
-                <h4>HTML - Proficient</h4>
-                <LinearProgress color='proficient' variant="determinate" value={75} />
+                <h4>HTML - Intermediate</h4>
+                <LinearProgress color='intermediate' variant="determinate" value={75} />
               </article>
 
               <article className='exp_details'>
                 {/* logo */}
                 <h4>CSS - Proficient</h4>
-                <LinearProgress color='proficient' variant="determinate" value={75} />
+                <LinearProgress color='intermediate' variant="determinate" value={75} />
               </article>
 
               <article className='exp_details'>
@@ -84,12 +84,6 @@ const Experience = () => {
                 {/* logo */}
                 <h4>Material UI</h4>
               </article>
-
-              <article className='exp_details'>
-                {/* logo */}
-                <h4>Django</h4>
-              </article>
-
             </div>
           </div>
 
