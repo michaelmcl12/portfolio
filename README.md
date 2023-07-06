@@ -1,3 +1,5 @@
+[link link to site](https://michaelmcl12.github.io/portfolio/)
+
 Personal site created to showcase my recent work and education. Creating the website helped to pratice creating a professonal looking site and to learn to use use react and its variuos packages including material UI and react-icons.
 
 # Getting Started with Create React App
